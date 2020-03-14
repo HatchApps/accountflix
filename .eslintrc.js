@@ -16,7 +16,9 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
+      'comma-dangle': ['error', 'always-multiline'],
       'indent': ['error', 4],
+      'semi': ['error', 'always'],
       'vue/html-indent': ['error', 4],
       'vue/script-indent': ['error', 4],
   }

@@ -80,18 +80,18 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
+import Logo from '~/components/Logo.vue';
+import VuetifyLogo from '~/components/VuetifyLogo.vue';
 
 export default {
     components: {
         Logo,
-        VuetifyLogo
+        VuetifyLogo,
     },
     head () {
         return {
-            script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }]
-        }
-    }
-}
+            script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+        };
+    },
+};
 </script>
