@@ -1,5 +1,7 @@
 # accountflix
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/55013cd6-8724-4181-812a-c113cbc2f5d9/deploy-status)](https://app.netlify.com/sites/accountflix/deploys)
+
 > Webinars and learning material for accountants
 
 ## Build Setup
