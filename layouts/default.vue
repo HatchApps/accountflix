@@ -10,7 +10,7 @@
                     :key="i"
                     link
                     :to="item.to"
-                    router
+                    nuxt
                     exact
                 >
                     <v-list-item-icon>
