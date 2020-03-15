@@ -45,6 +45,7 @@ export default {
     modules: [
         // Doc: https://axios.nuxtjs.org/usage
         '@nuxtjs/axios',
+        '@nuxtjs/markdownit',
         '@nuxtjs/pwa',
         // Doc: https://github.com/nuxt-community/dotenv-module
         '@nuxtjs/dotenv',
@@ -54,6 +55,9 @@ export default {
     ** See https://axios.nuxtjs.org/options
     */
     axios: {
+    },
+    markdownit: {
+        injected: true,
     },
     /*
     ** vuetify module configuration
