@@ -48,11 +48,7 @@ export default {
         '@nuxtjs/pwa',
         // Doc: https://github.com/nuxt-community/dotenv-module
         '@nuxtjs/dotenv',
-        // 'nuxt-purgecss',
     ],
-    /* purgeCSS: {
-        // your settings here
-    }, */
     /*
     ** Axios module configuration
     ** See https://axios.nuxtjs.org/options
@@ -84,7 +80,6 @@ export default {
     ** Build configuration
     */
     build: {
-        // extractCSS: true,
         /*
         ** You can extend webpack config here
         */
