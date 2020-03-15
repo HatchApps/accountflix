@@ -58,6 +58,8 @@ export default {
     },
     markdownit: {
         injected: true,
+        html: true,
+        linkify: true,
     },
     /*
     ** vuetify module configuration
