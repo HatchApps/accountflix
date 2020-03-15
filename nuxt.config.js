@@ -90,12 +90,19 @@ export default {
         routes () {
             const fs = require('fs');
             const path = require('path');
-            return fs.readdirSync('./assets/content/webinars').map((file) => {
+            const webinars = fs.readdirSync('./assets/content/webinars').map((file) => {
                 return {
                     route: `/webinars/${path.parse(file).name}`, // Return the slug
                     payload: require(`./assets/content/webinars/${file}`),
                 };
             });
+            const materials = fs.readdirSync('./assets/content/on-demand').map((file) => {
+                return {
+                    route: `/on-demand/${path.parse(file).name}`, // Return the slug
+                    payload: require(`./assets/content/on-demand/${file}`),
+                };
+            });
+            return webinars.concat(materials);
         },
     },
 };
