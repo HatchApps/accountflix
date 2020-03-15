@@ -1,0 +1,4 @@
+[build.environment]
+  # Equivalent to nuxt generate --quiet (doesn't output the pages built during the build)
+  CI = "1"
+
