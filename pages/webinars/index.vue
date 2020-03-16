@@ -1,8 +1,10 @@
 <template>
     <div>
-        <div v-for="webinar in webinars" :key="webinar.slug">
-            <a :href="`/webinars/${webinar.slug}`">{{ webinar.title }}</a>
-        </div>
+        <VWebinarPreview
+            v-for="(webinar, i) in webinars"
+            :key="i"
+            :webinar="webinar"
+        />
     </div>
 </template>
 

@@ -19,15 +19,17 @@
         <v-row>
             <v-col>
                 <v-card>
-                    <v-card-title class="headline justify-center">
+                    <v-card-title class="headline">
                         Upcoming Webinars
                     </v-card-title>
-                    <v-card-text class="text-center">
-                        <p class="mb-1">
-                            A list of webinars to go here
-                        </p>
-                    </v-card-text>
-                    <v-card-actions class="justify-center">
+                    <div class="pa-4">
+                        <VWebinarPreview
+                            v-for="(webinar, i) in webinars"
+                            :key="i"
+                            :webinar="webinar"
+                        />
+                    </div>
+                    <v-card-actions class="pl-4">
                         <v-btn
                             color="primary"
                             nuxt
@@ -38,17 +40,22 @@
                     </v-card-actions>
                 </v-card>
             </v-col>
+        </v-row>
+
+        <v-row>
             <v-col>
                 <v-card>
-                    <v-card-title class="headline justify-center">
+                    <v-card-title class="headline">
                         Recent On-Demand Material
                     </v-card-title>
-                    <v-card-text class="text-center">
-                        <p class="mb-1">
-                            A list of training material to go here
-                        </p>
-                    </v-card-text>
-                    <v-card-actions class="justify-center">
+                    <div class="pa-4">
+                        <VMaterialPreview
+                            v-for="(material, i) in materials"
+                            :key="i"
+                            :material="material"
+                        />
+                    </div>
+                    <v-card-actions class="pl-4">
                         <v-btn
                             color="primary"
                             nuxt
@@ -65,6 +72,14 @@
 
 <script>
 export default {
+    computed: {
+        webinars () {
+            return this.$store.state.webinars;
+        },
+        materials () {
+            return this.$store.state.materials;
+        },
+    },
     head () {
         return {
             script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],

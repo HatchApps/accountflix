@@ -1,7 +1,16 @@
 <template>
     <article>
         <h1>{{ webinar.title }}</h1>
-        <div>{{ webinar.body }}</div>
+        <div v-html="$md.render(webinar.body)" />
+        <div>
+            <v-btn
+                v-if="webinar.registration_link"
+                color="primary"
+                :to="webinar.registration_link"
+            >
+                Register Now
+            </v-btn>
+        </div>
     </article>
 </template>
 

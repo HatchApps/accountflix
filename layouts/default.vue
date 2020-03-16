@@ -6,19 +6,47 @@
         >
             <v-list nav>
                 <v-list-item
-                    v-for="(item, i) in items"
-                    :key="i"
                     link
-                    :to="item.to"
+                    to="/"
                     nuxt
                     exact
                 >
                     <v-list-item-icon>
-                        <v-icon>{{ item.icon }}</v-icon>
+                        <v-icon>mdi-home</v-icon>
                     </v-list-item-icon>
 
                     <v-list-item-content>
-                        <v-list-item-title>{{ item.title }}</v-list-item-title>
+                        <v-list-item-title>Home</v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
+
+                <v-list-item
+                    link
+                    to="/webinars"
+                    nuxt
+                    exact
+                >
+                    <v-list-item-icon>
+                        <VWebinarIcon />
+                    </v-list-item-icon>
+
+                    <v-list-item-content>
+                        <v-list-item-title>Webinars</v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
+
+                <v-list-item
+                    link
+                    to="/on-demand"
+                    nuxt
+                    exact
+                >
+                    <v-list-item-icon>
+                        <VMaterialIcon />
+                    </v-list-item-icon>
+
+                    <v-list-item-content>
+                        <v-list-item-title>On Demand</v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
             </v-list>
@@ -34,7 +62,7 @@
         </v-navigation-drawer>
         <v-app-bar app dark>
             <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-            <v-toolbar-title>{{ title }}</v-toolbar-title>
+            <v-toolbar-title>Accountflix</v-toolbar-title>
         </v-app-bar>
         <v-content>
             <v-container>
@@ -49,12 +77,6 @@ export default {
     data () {
         return {
             drawer: null,
-            title: 'Accountflix',
-            items: [
-                { title: 'Home', icon: 'mdi-home', to: '/' },
-                { title: 'Webinars', icon: 'mdi-presentation-play', to: '/webinars' },
-                { title: 'On Demand', icon: 'mdi-video-vintage', to: '/on-demand' },
-            ],
         };
     },
 };

@@ -30,11 +30,13 @@ export default {
     ** Plugins to load before mounting the App
     */
     plugins: [
+        { src: '~/plugins/global-components.js' },
     ],
     /*
     ** Nuxt.js dev-modules
     */
     buildModules: [
+        '@nuxtjs/date-fns',
         // Doc: https://github.com/nuxt-community/eslint-module
         '@nuxtjs/eslint-module',
         '@nuxtjs/vuetify',

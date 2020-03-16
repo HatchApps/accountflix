@@ -1036,6 +1036,13 @@
     consola "^2.11.3"
     defu "^1.0.0"
 
+"@nuxtjs/date-fns@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/date-fns/-/date-fns-1.2.0.tgz#670c2841443084c4c1021190ebbd8476c7cc9f5c"
+  integrity sha512-pnbfvC7MPodpX1rTXEGCepRFjrgNg1yh7HxlxVE1bqiOymEJbkYsnTBIB6eY+rQpCmkpMehnGuHYwCUVs07gIA==
+  dependencies:
+    date-fns "^2.9.0"
+
 "@nuxtjs/dotenv@^1.4.0":
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/@nuxtjs/dotenv/-/dotenv-1.4.1.tgz#dd5abb98e22cc7ae27139d3aa606151034293128"
@@ -2748,6 +2755,11 @@ cyclist@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
   integrity sha1-WW6WmP0MgOEgOMK4LW6xs1tiJNk=
+
+date-fns@^2.9.0:
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.11.0.tgz#ec2b44977465b9dcb370021d5e6c019b19f36d06"
+  integrity sha512-8P1cDi8ebZyDxUyUprBXwidoEtiQAawYPGvpfb+Dg0G6JrQ+VozwOmm91xYC0vAv1+0VmLehEPb+isg4BGUFfA==
 
 de-indent@^1.0.2:
   version "1.0.2"

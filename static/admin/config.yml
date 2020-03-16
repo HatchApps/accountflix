@@ -16,10 +16,11 @@ collections:
         preview: false
       fields:
           - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Publish Date', name: 'publish-date', widget: 'datetime' }
-          - { label: 'Webinar Date', name: 'webinar-date', widget: 'datetime' }
+          - { label: 'Publish Date', name: 'publishDate', widget: 'datetime' }
+          - { label: 'Webinar Date', name: 'webinarDate', widget: 'datetime' }
           - { label: 'Description', name: 'description', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: 'Registration Link', name: 'registrationLink', widget: 'string' }
     - name: 'on-demand'
       label: 'On Demand'
       format: 'json'
@@ -30,6 +31,7 @@ collections:
         preview: false
       fields:
         - { label: 'Title', name: 'title', widget: 'string' }
-        - { label: 'Publish Date', name: 'publish-date', widget: 'datetime' }
+        - { label: 'Publish Date', name: 'publishDate', widget: 'datetime' }
         - { label: 'Description', name: 'description', widget: 'string' }
         - { label: 'Body', name: 'body', widget: 'markdown' }
+        - { label: 'Source Link', name: 'sourceLink', widget: 'string' }

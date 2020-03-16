@@ -19,6 +19,7 @@ module.exports = {
       'comma-dangle': ['error', 'always-multiline'],
       'indent': ['error', 4],
       'semi': ['error', 'always'],
+      'vue/no-v-html': 'off',
       'vue/html-indent': ['error', 4],
       'vue/script-indent': ['error', 4],
   }
