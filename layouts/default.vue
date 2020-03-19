@@ -62,9 +62,12 @@
         </v-navigation-drawer>
         <v-app-bar app dark>
             <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-            <v-toolbar-title class="pink--text font-weight-black">
-                Accountflix
-            </v-toolbar-title>
+            <v-img
+                src="/accountflix-logo.png"
+                max-height="30px"
+                max-width="200px"
+                contain="true"
+            />
         </v-app-bar>
         <v-content>
             <v-container>
