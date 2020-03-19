@@ -1,6 +1,7 @@
 <template>
     <v-card
-        color="blue-grey darken-2"
+        color="black darken-2"
+        class="mb-5"
         :to="`/webinars/${webinar.slug}`"
         nuxt
         hover

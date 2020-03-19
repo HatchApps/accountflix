@@ -4,9 +4,10 @@
         <div v-html="$md.render(webinar.body)" />
         <div>
             <v-btn
-                v-if="webinar.registration_link"
-                color="primary"
-                :to="webinar.registration_link"
+                v-if="webinar.registrationLink"
+                color="pink"
+                target="_blank"
+                :href="webinar.registrationLink"
             >
                 Register Now
             </v-btn>

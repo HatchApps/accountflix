@@ -1,8 +1,9 @@
 <template functional>
     <v-card
-        color="teal darken-2"
+        color="black darken-2"
         :to="`/on-demand/${props.material.slug}`"
         nuxt
+        class="mb-5"
     >
         <v-list-item>
             <v-list-item-content>

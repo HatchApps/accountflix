@@ -55,14 +55,16 @@
                 <div class="text-center pb-1">
                     <span class="caption text--secondary">
                         Maintained with <v-icon>mdi-heart</v-icon> by
-                        <a href="https://xavier-analytics.com" target="_blank">Xavier Analytics</a>
+                        <a href="https://xavier-analytics.com" target="_blank" class="pink--text">Xavier Analytics</a>
                     </span>
                 </div>
             </template>
         </v-navigation-drawer>
         <v-app-bar app dark>
             <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-            <v-toolbar-title>Accountflix</v-toolbar-title>
+            <v-toolbar-title class="pink--text font-weight-black">
+                Accountflix
+            </v-toolbar-title>
         </v-app-bar>
         <v-content>
             <v-container>

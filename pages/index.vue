@@ -3,12 +3,12 @@
         <v-row no-gutters class="mb-5">
             <v-col>
                 <v-card>
-                    <v-card-title class="headline justify-center">
-                        A collection of upcoming webinars and the latest training materials for accountants.
-                    </v-card-title>
                     <v-card-text class="text-center">
+                        <p class="headline justify-center white--text">
+                            A collection of the latest webinars and training materials for accountants, both upcoming and on-demand.
+                        </p>
                         <p class="mb-1">
-                            Jump up a webinar if you find yourself with a spare hour.
+                            Jump on a webinar if you find yourself with a spare hour.
                             Because who can keep track of all the emails?
                         </p>
                     </v-card-text>
