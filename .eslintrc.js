@@ -18,9 +18,10 @@ module.exports = {
   rules: {
       'comma-dangle': ['error', 'always-multiline'],
       'indent': ['error', 4],
+      'no-trailing-spaces': 'off',
       'semi': ['error', 'always'],
       'vue/no-v-html': 'off',
       'vue/html-indent': ['error', 4],
       'vue/script-indent': ['error', 4],
   }
-}
+};
