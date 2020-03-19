@@ -21,7 +21,12 @@ collections:
           - { label: 'Description', name: 'description', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
           - { label: 'Registration Link', name: 'registrationLink', widget: 'string' }
-          - { label: 'Tags', name: 'tags', widget: 'list', default: ['webinar'] }
+          - { label: 'Tags',
+              name: 'tags',
+              widget: 'list',
+              default: ['webinar'],
+              field: { label: 'Tag', name: 'tag', widget: 'string' }
+          }
     - name: 'on-demand'
       label: 'On Demand'
       format: 'json'
@@ -36,4 +41,9 @@ collections:
         - { label: 'Description', name: 'description', widget: 'string' }
         - { label: 'Body', name: 'body', widget: 'markdown' }
         - { label: 'Source Link', name: 'sourceLink', widget: 'string' }
-        - { label: 'Tags', name: 'tags', widget: 'list', default: ['material'] }
+        - { label: 'Tags',
+            name: 'tags',
+            widget: 'list',
+            default: ['material'],
+            field: { label: 'Tag', name: 'tag', widget: 'string' }
+        }
