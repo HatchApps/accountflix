@@ -21,6 +21,7 @@ collections:
           - { label: 'Description', name: 'description', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
           - { label: 'Registration Link', name: 'registrationLink', widget: 'string' }
+          - { label: 'Tags', name: 'tags', widget: 'list', default: ['webinar'] }
     - name: 'on-demand'
       label: 'On Demand'
       format: 'json'
@@ -35,3 +36,4 @@ collections:
         - { label: 'Description', name: 'description', widget: 'string' }
         - { label: 'Body', name: 'body', widget: 'markdown' }
         - { label: 'Source Link', name: 'sourceLink', widget: 'string' }
+        - { label: 'Tags', name: 'tags', widget: 'list', default: ['material'] }
