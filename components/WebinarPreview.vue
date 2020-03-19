@@ -34,8 +34,8 @@
             <v-btn
                 v-if="webinar.registrationLink"
                 text
-                nuxt
-                :to="webinar.registrationLink"
+                :href="webinar.registrationLink"
+                target="_blank"
             >
                 Register
             </v-btn>
