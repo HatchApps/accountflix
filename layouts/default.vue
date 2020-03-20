@@ -66,7 +66,7 @@
                 src="/accountflix-logo.png"
                 max-height="30px"
                 max-width="200px"
-                contain="true"
+                :contain="true"
             />
         </v-app-bar>
         <v-content>
